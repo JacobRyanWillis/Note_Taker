@@ -30,7 +30,7 @@ app.post('/api/notes', (req, res) => {
         const newNote = req.body;
         newNote.id = uuidv4(); // generate unique ID for the new note
         notes.push(newNote);
-        fs.writeFile('./Develop/db/db.json', JSON.stringify(notes), err => {
+        fs.writeFile('./Develop/db/db.json', JSON.stringify(notes, null, 2), err => {
           if (err) throw err;
           res.json(newNote);
         });
