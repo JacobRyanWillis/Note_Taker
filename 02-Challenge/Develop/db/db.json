@@ -1,15 +1,1 @@
-[
-  {
-    "title": "Test Title",
-    "text": "Test text"
-  },
-  {
-    "id": "7d8b3b66-aa10-4e48-bf23-9c579977f9a9"
-  },
-  {
-    "id": "a315c64d-93c2-4274-b718-a20776238724"
-  },
-  {
-    "id": "b07f3f63-96b3-430e-aaff-a0cec9cbba3e"
-  }
-]
+[{"title":"Test Title","text":"Test text"},{"id":"7ddae65e-4ab1-4116-b38a-cc9845aa8791"},{"id":"e5d11039-d964-4a0d-8b8c-b2c4ccc98159"},{"id":"955ec104-9291-4d69-9ef1-32a9e9675b3d"}]
