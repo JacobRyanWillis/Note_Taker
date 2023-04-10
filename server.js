@@ -8,7 +8,7 @@ const writeFile = util.promisify(fs.writeFile);
 
 const app = express();
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static('public'));
 app.use(express.json());
@@ -33,7 +33,7 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', ({ body }, res) => {
   getNotes().then(oldNotes => {
     const newNotes = [...oldNotes, { title: body.title, text: body.text, id: uuidv4() }]
-    writeFile('./Develop/db/db.json', JSON.stringify(newNotes)).then(() => res.json ({ msg: 'okay'}))
+    writeFile('./Develop/db/db.json', JSON.stringify(newNotes)).then(() => res.json ({ msg: 'notes posted'}))
     .catch(err => res.json(err));
   })
 })
@@ -41,7 +41,7 @@ app.post('/api/notes', ({ body }, res) => {
 app.delete('/api/notes/:id', (req, res) => {
   getNotes().then(oldNotes => {
       const newNotes = oldNotes.filter(note => note.id !== req.params.id)
-      writeFile("./Develop/db/db.json", JSON.stringify(newNotes)).then(() => res.json({ msg: "okay" })).catch(err => res.json(err));
+      writeFile("./Develop/db/db.json", JSON.stringify(newNotes)).then(() => res.json({ msg: "user id deleted" })).catch(err => res.json(err));
   })
 })
 
