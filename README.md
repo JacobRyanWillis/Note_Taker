@@ -30,8 +30,8 @@ they will grab the data in the db.json file. Using insomnia is recommend to test
 Node.js: https://nodejs.org/en <br>
 Express.js: https://expressjs.com/ <br>
 
-<pre> Corey Yates <pre> <br> 
-<pre> Alyssa Geria <pre>
+<pre> Corey Yates </pre> <br> 
+<pre> Alyssa Geria </pre>
 
 ## License
 
