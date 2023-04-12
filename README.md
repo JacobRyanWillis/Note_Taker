@@ -47,7 +47,7 @@ MIT License
 
 ## Tests
 
-No tests avaiable
+No tests available
 
 ## Questions
 
