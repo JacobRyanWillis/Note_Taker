@@ -22,11 +22,12 @@ You will need to install npm/node.js - https://nodejs.org/en
 
 ## Usage
 
+Deployed Heroku page: https://notetakerapplication.herokuapp.com/
 
 ![Website Screenshot](./Assets/screenshot.png) 
 
-When the user does a POST request then the notes will be posted on the db.json file. When the user does a DELETE request with the given id. When the user makes a GET request
-they will grab the data in the db.json file. Using insomnia is recommend to test the endpoints located in server.js
+When the user does a POST request then the notes will be posted on the db.json file. When the user does a DELETE request with the given id it will delete that id from the db.json file. When the user makes a GET request
+they will grab the data in the db.json file. I would recommend using insomnia to test each endpoint.
 
 ## Credits
 
